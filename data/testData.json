@@ -1,0 +1,86 @@
+{
+  "URL" : "https://automationexercise.com/",
+
+  "Login" : {
+    "ValidCredentials": {
+      "Email" : "eslamnasser796@gmail.com",
+      "Password": "123456"
+    },
+    "InvalidCredentials": {
+      "InvalidUsername": {
+        "Email" : "eybad@gmail.com",
+        "Password": "123456"
+      },
+      "InvalidPassword": {
+        "Email" : "eyad@gmail.com",
+        "Password": "12345"
+      }
+    }
+  },
+
+  "TestCaseURL" : {
+    "TestCaseUrl" : "https://automationexercise.com/test_cases"
+  },
+
+
+  "ContactUsForm" : {
+    "Name" : "eslam",
+    "Email" : "eslamnasser796@gmail.com",
+    "Subject" : "Test",
+    "Message" : "ContactUsForm Message",
+    "File" : "C:\\Users\\Lenovo\\Downloads\\CLPBRDb9AzIL.png"
+  },
+
+  "Registration" : {
+    "ValidCredentials":{
+    "RegisterName" : "ibrahim",
+    "RegisterEmail" : "Ebrahimovic.salem15571@gmail.com"
+
+  }
+  },
+
+  "Checkout" : {
+    "Comment":"123"
+  },
+
+  "Payment" : {
+    "Name": "123",
+    "Number": "132354",
+    "CVC": "123",
+    "Month": "01",
+    "Year": "1999"
+  },
+
+  "RegistrationAccountForm" : {
+    "ValidRegisterAccountCredentials":{
+      "RegisterAccountPassword" : "123456789",
+      "RegisterBirthDay" : "1",
+      "RegisterBirthMonth" : "January",
+      "RegisterBirthYear" : "2021",
+      "FirstNameAddressA" : "Ibrahim",
+      "LastNameAddressA" : "Salem",
+      "CompanyNameAddressA" : "Google",
+      "AddressNameA1" : "London32",
+      "AddressNameA2" : "London100",
+      "CountryAddressA" : "Canada",
+      "StateA" : "Single",
+      "CityA" : "London",
+      "ZipCodeA" : "123456",
+      "MobileNumberA" : "673723643"
+    }
+  },
+
+
+  "SearchOnProducts" : {
+    "SearchedOnProducts":{
+      "Product" : "Men Tshirt"
+    }
+  },
+
+  "Subscriptions" : {
+    "subscriptionEmail":{
+      "EmailAddress" : "test.num1@gmail.com"
+    }
+  }
+
+}
