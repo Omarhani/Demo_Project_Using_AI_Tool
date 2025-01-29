@@ -20,7 +20,7 @@ import java.lang.reflect.Method;
 
 public class BaseTests {
 
-    WebDriver driver;
+    protected WebDriver driver;
     protected HomePage homePage;
     protected RegisterPage registerPage;
     //protected RegisterPage registerPage;

@@ -7,8 +7,6 @@ import org.openqa.selenium.interactions.Actions;
 import utils.MethodHandles;
 import utils.ProductOverlay;
 
-import javax.swing.*;
-
 public class HomePage extends MethodHandles {
     public HomePage(WebDriver driver) {
         super(driver);
@@ -37,13 +35,22 @@ public class HomePage extends MethodHandles {
     private final By successfulMessageTxt = By.cssSelector(".alert-success.alert");
     private final By cartLinkPage = By.cssSelector("body > header:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)");
 
+    private final By headerHomePage = By.cssSelector("#header");
 
+    private final By footerHomePage = By.cssSelector("#footer");
 
 
 
     //Actions
     public boolean homePageVisible() {
         return isDisplayed(homePageLink, 3);
+    }
+
+    public WebElement getHeaderHomePage(){
+        return webElement(headerHomePage);
+    }
+    public WebElement getFooterHomePage(){
+        return webElement(footerHomePage);
     }
     public LoginPage clickOnSignUpAndLoginLink()
     {

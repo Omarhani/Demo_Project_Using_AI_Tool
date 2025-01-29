@@ -28,7 +28,7 @@ public class MethodHandles {
     }
 
 
-    private WebElement webElement(By locator) {
+    protected WebElement webElement(By locator) {
         return driver.findElement(locator);
     }
 
@@ -290,7 +290,12 @@ public class MethodHandles {
     }
 
     private void setSteps() {
-        test.info(getMethodName());
+        try {
+            test.info(getMethodName());
+        }catch (NullPointerException e){
+
+        }
+
     }
 
     private static void addBorderToElement(WebDriver driver, WebElement element) {
